@@ -16,6 +16,7 @@ gem "friendly_id", "~> 4.0.0.beta8"
 # Authentication, API and Oauth
 gem 'devise'
 gem 'oauth'
+# gem 'cancan'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
