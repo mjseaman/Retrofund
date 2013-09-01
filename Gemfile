@@ -30,8 +30,10 @@ gem 'haml-rails'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'compass-rails'
-  gem 'susy'
+  # gem 'compass-rails'
+  gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails'
+  gem 'holder_rails'
   # gem 'sassy-buttons'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
