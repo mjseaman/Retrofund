@@ -43,23 +43,26 @@
   / Three columns of text below the carousel
   .row
     .col-lg-4
-      %img.img-circle{:alt => "Generic placeholder image", "data-src" => "holder.js/140x140", :src => "data:image/png;base64,"}/
-      %h2 Heading
-      %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+      =image_tag("sandy.png", size: "140x140", class: "img img-circle")
+      %h2 Sandy
+      %h4.text-muted Rancho Penasquitos
+      %p I recommend this company to anyone who asks - they're the picture of reliability and excellent work.
       %p
         %a.btn.btn-default{:href => "#"} View details »
     / /.col-lg-4
     .col-lg-4
-      %img.img-circle{:alt => "Generic placeholder image", "data-src" => "holder.js/140x140", :src => "data:image/png;base64,"}/
-      %h2 Heading
-      %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      =image_tag("al.png", size: "140x140", class: "img img-circle")
+      %h2 Alan
+      %h4.text-muted Solana Beach
+      %p I've never been so impressed with contracting work.  These guys know their stuff!
       %p
         %a.btn.btn-default{:href => "#"} View details »
     / /.col-lg-4
     .col-lg-4
-      %img.img-circle{:alt => "Generic placeholder image", "data-src" => "holder.js/140x140", :src => "data:image/png;base64,"}/
-      %h2 Heading
-      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      =image_tag("dustin.png", size: "140x140", class: "img img-circle")
+      %h2 Dustin
+      %h4.text-muted Encinitas
+      %p Five. Stars.
       %p
         %a.btn.btn-default{:href => "#"} View details »
     / /.col-lg-4
@@ -67,30 +70,38 @@
   / START THE FEATURETTES
   %hr.featurette-divider/
   .row.featurette
+    .col-md-5
+      =image_tag("tools.png", class:"img featurette-image img-responsive")
     .col-md-7
       %h2.featurette-heading
-        First featurette heading.
-        %span.text-muted It'll blow your mind.
-      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-    .col-md-5
-      %img.featurette-image.img-responsive{:alt => "Generic placeholder image", "data-src" => "holder.js/500x500/auto", :src => "data:image/png;base64,"}/
-  %hr.featurette-divider/
-  .row.featurette
-    .col-md-5
-      %img.featurette-image.img-responsive{:alt => "Generic placeholder image", "data-src" => "holder.js/500x500/auto", :src => "data:image/png;base64,"}/
-    .col-md-7
-      %h2.featurette-heading
-        Oh yeah, it's that good.
-        %span.text-muted See for yourself.
-      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        Our services
+      %p.lead Trim offers maintenance landscaping including lawn mowing, hedge trimming, watering, routine sprinkler maintenance and related services.  For larger jobs, please call us and we'll happily refer you to a contractor.
   %hr.featurette-divider/
   .row.featurette
     .col-md-7
       %h2.featurette-heading
-        And lastly, this one.
-        %span.text-muted Checkmate.
-      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        Why Trim?
+      %h3.text-muted Guaranteed Happiness
+      %p.lead The satisfaction of our clients drives every decision we make.  Our office and landscaping staff is dedicated to making your experience enjoyable.  In the unlikely event that you are unhappy with services rendered by a Trim landscaper, we will gladly send someone back to make it right.
     .col-md-5
-      %img.featurette-image.img-responsive{:alt => "Generic placeholder image", "data-src" => "holder.js/500x500/auto", :src => "data:image/png;base64,"}/
+      =image_tag("leaves.png", class:"img featurette-image img-responsive")
+  %hr.featurette-divider/
+  .row.featurette
+    .col-md-5
+      =image_tag("tools.png", class:"img featurette-image img-responsive")
+    .col-md-7
+      %h2.featurette-heading
+        Why Else?
+      %h3.text-muted The Best Landscapers in Town
+      %p.lead Our reputation is based on the quality of our landscapers' work.  Every landscaper comes prepared with equipment and experience.  We thoroughly screen landscapers to ensure their experience and trustworthiness, so you can rest easy knowing that your yard will be managed by a pro.
+  %hr.featurette-divider/
+  .row.featurette
+    .col-md-7
+      %h2.featurette-heading
+        About us - 
+        %span.text-muted the dream team
+      %p.lead Sean and Mitch Seaman started Trim to provide simple, reliable landscaping services to homeowners.  Our goal is to streamline your services so that you can spend less time worrying about your home and more time enjoying it.
+    .col-md-5
+      =image_tag("bros.png", class:"img featurette-image img-responsive")
   %hr.featurette-divider/
   / /END THE FEATURETTES
