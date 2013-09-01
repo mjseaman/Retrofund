@@ -31,6 +31,11 @@
     = csrf_meta_tags
   / NAVBAR
   %body
+    .flash
+      -flash.each do |name, msg|
+        .alert.alert-info
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} ×
+          =content_tag :div, msg, id: "flash_#{name}"
     .navbar-wrapper
       .container
         .navbar.navbar-inverse.navbar-static-top
@@ -74,9 +79,6 @@
                         =link_to 'Sign in with Twitter', user_omniauth_authorize_path(:twitter)
                       %li
                         =link_to 'Sign in with Facebook', user_omniauth_authorize_path(:facebook)
-      .flash
-        -flash.each do |name, msg|
-          =content_tag :div, msg, id: "flash_#{name}"
     =yield              
     / FOOTER
     %footer
