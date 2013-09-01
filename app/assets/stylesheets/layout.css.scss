@@ -38,13 +38,13 @@ body {
   }
 
   #item-1 {
-    background-image: image-url("yard1.jpg");
-  }
-  #item-2 {
     background-image: image-url("yard2.jpg");
   }
+  #item-2 {
+    background-image: image-url("yard1.jpg");
+  }
   #item-3 {
-    background-image: image-url("yard3.jpg");
+    background-image: image-url("yard4.jpg");
   }
 }
 /* Since positioning the image, we need to help out the caption */

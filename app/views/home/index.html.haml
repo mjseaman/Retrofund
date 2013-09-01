@@ -8,16 +8,15 @@
     %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
   .carousel-inner
     .item.active#item-1
-      / %img{:alt => "First slide", "data-src" => "holder.js/100%x500/auto/#777:#7a7a7a/text:First slide", :src => "data:image/png;base64,"}/
-      / =image_tag("yard1.jpg")
       .container
         .carousel-caption
           %h1 Friendly, reliable Service
           %p Your professional landscaper will arrive on time, communicate effectively and do the job right.
           %p
-            %a.btn.btn-large.btn-primary{:href => "#"} Sign up today
+
+            =button_to "Sign up!", new_user_registration_path, method: :get, class: "btn btn-large btn-primary"
+            / %a.btn.btn-large.btn-primary{:href => "#"} Sign up today
     .item#item-2
-      %img{:alt => "Second slide", "data-src" => "holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide", :src => "data:image/png;base64,"}/
       .container
         .carousel-caption
           %h1 Hassle-Free Pricing
@@ -25,7 +24,6 @@
           %p
             %a.btn.btn-large.btn-primary{:href => "#"} Learn more
     .item#item-3
-      %img{:alt => "Third slide", "data-src" => "holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide", :src => "data:image/png;base64,"}/
       .container
         .carousel-caption
           %h1 Our Guarantee
