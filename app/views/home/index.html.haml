@@ -13,23 +13,21 @@
           %h1 Friendly, reliable Service
           %p Your professional landscaper will arrive on time, communicate effectively and do the job right.
           %p
-
-            =button_to "Sign up!", new_user_registration_path, method: :get, class: "btn btn-large btn-primary"
-            / %a.btn.btn-large.btn-primary{:href => "#"} Sign up today
+            =button_to "Sign up!", new_user_registration_path, method: :get, class: "btn btn-lg btn-success"
     .item#item-2
       .container
         .carousel-caption
           %h1 Hassle-Free Pricing
           %p Pay through our web interface - no checks, cash, or haggling.
           %p
-            %a.btn.btn-large.btn-primary{:href => "#"} Learn more
+            =button_to "Sign up!", new_user_registration_path, method: :get, class: "btn btn-lg btn-success"
     .item#item-3
       .container
         .carousel-caption
           %h1 Our Guarantee
           %p If you aren't happy with our work, we'll fix it or issue a full refund.
           %p
-            %a.btn.btn-large.btn-primary{:href => "#"} More
+            =button_to "Sign up!", new_user_registration_path, method: :get, class: "btn btn-lg btn-success"
   %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
     %span.glyphicon.glyphicon-chevron-left
   %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
@@ -43,16 +41,16 @@
   / Three columns of text below the carousel
   .row
     .col-lg-4
-      =image_tag("sandy.png", size: "140x140", class: "img img-circle")
-      %h2 Sandy
-      %h4.text-muted Rancho Penasquitos
-      %p I recommend this company to anyone who asks - they're the picture of reliability and excellent work.
-    / /.col-lg-4
-    .col-lg-4
       =image_tag("al.png", size: "140x140", class: "img img-circle")
       %h2 Alan
       %h4.text-muted Solana Beach
       %p I've never been so impressed with contracting work.  These guys know their stuff!
+    / /.col-lg-4
+    .col-lg-4
+      =image_tag("sandy.png", size: "140x140", class: "img img-circle")
+      %h2 Sandy
+      %h4.text-muted Rancho Penasquitos
+      %p I recommend this company to anyone who asks - they're the picture of reliability and excellent work.
     / /.col-lg-4
     .col-lg-4
       =image_tag("dustin.png", size: "140x140", class: "img img-circle")
@@ -87,7 +85,7 @@
       =image_tag("tools.png", class:"img featurette-image img-responsive")
     .col-md-7
       %h2.featurette-heading
-        Why Else?
+        Why else?
       %h3.text-muted The Best Landscapers in Town
       %p.lead Our reputation is based on the quality of our landscapers' work.  Every landscaper comes prepared with equipment and experience.  We thoroughly screen landscapers to ensure their experience and trustworthiness, so you can rest easy knowing that your yard will be managed by a pro.
   %hr.featurette-divider/
