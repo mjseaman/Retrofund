@@ -27,7 +27,7 @@
       .container
         .carousel-caption
           %h1 Our Guarantee
-          %p If you aren't happy with our work, we'll fix it or give your money back.
+          %p If you aren't happy with our work, we'll fix it or issue a full refund.
           %p
             %a.btn.btn-large.btn-primary{:href => "#"} More
   %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
@@ -47,26 +47,22 @@
       %h2 Sandy
       %h4.text-muted Rancho Penasquitos
       %p I recommend this company to anyone who asks - they're the picture of reliability and excellent work.
-      %p
-        %a.btn.btn-default{:href => "#"} View details »
     / /.col-lg-4
     .col-lg-4
       =image_tag("al.png", size: "140x140", class: "img img-circle")
       %h2 Alan
       %h4.text-muted Solana Beach
       %p I've never been so impressed with contracting work.  These guys know their stuff!
-      %p
-        %a.btn.btn-default{:href => "#"} View details »
     / /.col-lg-4
     .col-lg-4
       =image_tag("dustin.png", size: "140x140", class: "img img-circle")
       %h2 Dustin
       %h4.text-muted Encinitas
       %p Five. Stars.
-      %p
-        %a.btn.btn-default{:href => "#"} View details »
     / /.col-lg-4
-  / /.row
+  .row.more-reviews
+    %p
+      %a.btn.btn-default{:href => "#"} More reviews »
   / START THE FEATURETTES
   %hr.featurette-divider/
   .row.featurette
@@ -98,9 +94,8 @@
   .row.featurette
     .col-md-7
       %h2.featurette-heading
-        About us - 
-        %span.text-muted the dream team
-      %p.lead Sean and Mitch Seaman started Trim to provide simple, reliable landscaping services to homeowners.  Our goal is to streamline your services so that you can spend less time worrying about your home and more time enjoying it.
+        About us
+      %p.lead Brothers Sean and Mitch Seaman started Trim to provide simple, reliable landscaping services to homeowners.  Our goal is to streamline your services so that you can spend less time worrying about your home and more time enjoying it.
     .col-md-5
       =image_tag("bros.png", class:"img featurette-image img-responsive")
   %hr.featurette-divider/
