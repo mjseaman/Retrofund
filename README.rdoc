@@ -4,6 +4,6 @@
 
 Followed Railscasts 209 and 235 to set up Devise and Omniauth in Rails 3.2.  
 
-Everything else is pretty basic - haml/sass, compass and susy (not initialized yet), no additional models.
+Everything else is pretty basic - haml/sass, bootstrap 3, no additional models.
 
 Postgres database, thin server.
